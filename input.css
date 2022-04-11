@@ -6,7 +6,13 @@ h1 {
   font-size:3rem;
 }
 .card {
-  @apply rounded-lg w-[300px] shadow-lg shadow-gray-500 m-1 overflow-hidden hover:-translate-y-1 transition-transform;
+  @apply 
+  rounded-lg w-[300px] 
+  shadow-lg 
+  shadow-gray-500 m-1 
+  overflow-hidden transition-all 
+  motion-reduce:transition-none
+  hover:shadow-xl hover:shadow-gray-600  hover:-translate-y-1;
 }
 .card > img {
   @apply w-full h-auto;
@@ -16,4 +22,29 @@ h1 {
 }
 h2 {
   font-size:2.8rem;
+}
+.no-tailwind-h2 {
+  text-align: center;
+}
+.no-tailwind-h2:hover {
+  color:rgb(37 99 235 );
+}
+.no-tailwind-card {
+  border-radius:0.5rem;
+  width: 300px;
+  box-shadow: 0 10px 15px -3px #6b7280, 0 4px 6px -4px #6b7280;
+  overflow:hidden;
+  transition:150ms;
+  margin:0.25rem;
+}
+.no-tailwind-card > .container {
+  padding:1rem;
+}
+.no-tailwind-card:hover {
+  box-shadow: 0 20px 25px -5px #4b5563, 0 8px 10px -6px #4b5563;
+  transform:translateY(-.125rem);
+}
+.no-tailwind-container {
+  display: flex;
+  flex-wrap:wrap;
 }
