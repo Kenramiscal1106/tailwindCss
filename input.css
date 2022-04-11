@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font-size:3rem;
+}
+.card {
+  @apply rounded-lg w-[300px] shadow-lg shadow-gray-500 m-1 overflow-hidden hover:-translate-y-1 transition-transform;
+}
+.card > img {
+  @apply w-full h-auto;
+}
+.card > .container {
+  @apply p-[1rem];
+}
+h2 {
+  font-size:2.8rem;
+}
